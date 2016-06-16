@@ -1,0 +1,12 @@
+<h2>Welcome to the Question && Answer Board</h2>
+
+<p>
+  Submit your questions below, click on a question to see the answers people have responded with.
+</p>
+
+
+<ul>
+  {{#each model as |post|}}
+    <li>{{post.author}}{{post.question}}{{post.notes}}</li>
+  {{/each}}
+</ul>
