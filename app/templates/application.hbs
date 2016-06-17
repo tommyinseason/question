@@ -1,1 +1,20 @@
-{{outlet}}
+<header>
+  <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper black">
+          <a href="#!" class="brand-logo center thin">Inquiry</a>
+          <ul class="right hide-on-med-and-down thin">
+            <li>{{#link-to 'index'}}HOME{{/link-to}}</li>
+            <li>{{#link-to 'post'}}QUESTIONS{{/link-to}}</li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+</header>
+
+
+<main>
+  <div class="container">
+    {{outlet}}
+  </div>
+</main>
