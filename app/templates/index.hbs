@@ -11,7 +11,10 @@
 <div class="row myrow">
   <div class="two columns">
     {{#each model as |post|}}
-      <li>{{post.author}}{{post.question}}</li>
+       {{post-tile post=post}}
+       {{#link-to 'post' post.id}} {{post.question}}{{/link-to}}
     {{/each}}
   </div>
 </div>
+
+{{new-post addPost="addPost"}}
