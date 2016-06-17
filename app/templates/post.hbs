@@ -1,6 +1,6 @@
-<h2>More information about {{post.author}}'s post about: {{post.question}} </h2>
+<h2 class="thin ">More information about {{model.author}}'s post about: {{model.question}} </h2>
 
-<h3>{{post.notes}}</h3>
+<div class="divider"></div>
 
 {{update-post post=model update="update"}}
 
@@ -8,17 +8,10 @@
 
 
 
-<!-- <div class="container">
-  <h4>{{model.author}} asked:</h4>
-  <p>{{model.question}}</p>
-  <p>{{model.notes}}</p>
-</div>
-
-{{new-answer question=model save="saveAnswer"}}
-
 
 <ul>
   {{#each model.answers as |answer|}}
-    <li>{{answer.text}} -{{answer.author}}</li>
+    <li>{{answer.author}} {{answer.answer}}</li>
+    {{answer-tile post=model save="save"}}
   {{/each}}
-</ul> -->
+</ul>
