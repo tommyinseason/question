@@ -13,7 +13,7 @@
     <div class="card blue-grey lighten-2">
       <div class="card-content white-text">
         {{#each model as |post|}}
-           {{post-tile post=post}}
+           {{post-tile post=post save2="save3"}}
            {{#link-to 'post' post.id}} {{post.question}}{{/link-to}}
            <div class="divider"></div>
         {{/each}}

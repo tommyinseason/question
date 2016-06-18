@@ -8,10 +8,11 @@
 
 
 
-
+Answers:
 <ul>
   {{#each model.answers as |answer|}}
     <li>{{answer.author}} {{answer.answer}}</li>
-    {{answer-tile post=model save="save"}}
   {{/each}}
 </ul>
+
+{{answer-tile save2="save3" post=model}}

@@ -1,4 +1,4 @@
-{{#if show}}
+{{#if addNewAnswer}}
   <h1>Answer Question:</h1>
   <div>
     <form>
@@ -9,12 +9,12 @@
 
      <div class="form-group">
        <label for="answer">Answer:</label>
-       {{textarea value=answer id="answer" class="form-control" rows="10"}}
+       {{textarea value=answer id="answer" class="materialize-textarea" rows="10"}}
      </div>
 
-     <button class="btn btn-info" {{action 'save'}}>Answer</button>
+     <button class="btn btn-info" {{action 'save1'}}>Save</button>
     </form>
   </div>
 {{else}}
-  <button{{action 'showForm'}} class="btn">Answer Question</button>
+  <button{{action 'answerFormShow'}} class="btn">Answer Question</button>
 {{/if}}
