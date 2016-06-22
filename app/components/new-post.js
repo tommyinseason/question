@@ -11,7 +11,8 @@ export default Ember.Component.extend({
       var params = {
         author: this.get('author'),
         question: this.get('question'),
-        notes: this.get('notes')
+        notes: this.get('notes'),
+        cost: parseInt(this.get('cost'))
       };
       this.set('addNewPost', false);
       this. sendAction('addPost', params);
