@@ -40,5 +40,8 @@
     "ember-welcome-page": "^1.0.1",
     "emberfire": "2.0.0",
     "loader.js": "^4.0.1"
+  },
+  "dependencies": {
+    "materialize-css": "^0.97.6"
   }
 }
