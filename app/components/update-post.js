@@ -10,7 +10,8 @@ export default Ember.Component.extend({
       var params = {
           author: this.get('author'),
           question: this.get('question'),
-          notes: this.get('notes')
+          notes: this.get('notes'),
+          cost: this.get('cost')
       };
       this.set('updatePostForm', false);
       this.sendAction('update', post, params);

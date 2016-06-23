@@ -18,6 +18,11 @@
           {{input value=notes id="notes" placeholder=post.notes}}
         </div>
 
+        <div class="form-group">
+          <label for="cost">Cost</label>
+          {{input value=cost id="cost" placeholder=post.cost}}
+        </div>
+
         <button {{action 'update' post}}>Save</button>
       </form>
     </div>
