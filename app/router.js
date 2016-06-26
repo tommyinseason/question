@@ -9,6 +9,7 @@ Router.map(function() {
   this.route('post', {path: '/post/:post_id'});
   this.route('answer');
   this.route('topposts');
+  this.route('favorites');
 });
 
 export default Router;

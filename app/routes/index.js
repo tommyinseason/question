@@ -4,7 +4,7 @@ export default Ember.Route.extend({
   model() {
     return this.store.findAll('post');
   },
-
+  favoritePosts: Ember.inject.service(),
   actions: {
     save3(params) {
      var newAnswer = this.store.createRecord('answer', params);
